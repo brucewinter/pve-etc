@@ -1,0 +1,8 @@
+
+# bbw 09/23/2025 Comment out to enable tailscale
+
+#Types: deb
+#URIs: https://enterprise.proxmox.com/debian/ceph-squid
+#Suites: trixie
+#Components: enterprise
+#Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg

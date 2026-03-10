@@ -1,0 +1,56 @@
+[Unit]
+Description=Pulse Temperature Proxy
+Documentation=https://github.com/rcourtman/Pulse
+After=network.target
+
+[Service]
+Type=simple
+User=pulse-sensor-proxy
+Group=pulse-sensor-proxy
+SupplementaryGroups=www-data
+WorkingDirectory=/var/lib/pulse-sensor-proxy
+ExecStart=/usr/local/bin/pulse-sensor-proxy
+Restart=on-failure
+RestartSec=5s
+
+# Runtime dirs/sockets
+RuntimeDirectory=pulse-sensor-proxy
+RuntimeDirectoryMode=0775
+RuntimeDirectoryPreserve=yes
+LogsDirectory=pulse/sensor-proxy
+LogsDirectoryMode=0750
+UMask=0007
+
+# Core hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/var/lib/pulse-sensor-proxy
+ReadOnlyPaths=/run/pve-cluster /etc/pve
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+ProtectClock=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectProc=invisible
+ProcSubset=pid
+LockPersonality=true
+RemoveIPC=true
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+RestrictNamespaces=true
+SystemCallFilter=@system-service
+SystemCallErrorNumber=EPERM
+CapabilityBoundingSet=
+AmbientCapabilities=
+KeyringMode=private
+LimitNOFILE=1024
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=pulse-sensor-proxy
+
+[Install]
+WantedBy=multi-user.target

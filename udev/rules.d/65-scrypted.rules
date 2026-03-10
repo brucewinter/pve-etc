@@ -1,0 +1,6 @@
+SUBSYSTEM=="apex", MODE="0666"
+SUBSYSTEM=="drm", MODE="0666"
+SUBSYSTEM=="kfd", MODE="0666"
+SUBSYSTEM=="accel", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1a6e", ATTRS{idProduct}=="089a", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="18d1", ATTRS{idProduct}=="9302", MODE="0666"

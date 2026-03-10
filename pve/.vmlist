@@ -1,0 +1,13 @@
+{
+"version": 3,
+"ids": {
+"104": { "node": "pve", "type": "lxc", "version": 7 },
+"103": { "node": "pve", "type": "qemu", "version": 3 },
+"102": { "node": "pve", "type": "lxc", "version": 6 },
+"108": { "node": "pve", "type": "qemu", "version": 2 },
+"107": { "node": "pve", "type": "qemu", "version": 4 },
+"100": { "node": "pve", "type": "lxc", "version": 10 },
+"106": { "node": "pve", "type": "qemu", "version": 1 },
+"105": { "node": "pve", "type": "qemu", "version": 5 }}
+
+}

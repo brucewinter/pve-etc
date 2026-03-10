@@ -1,0 +1,1 @@
+/usr/lib/zfs-linux/zed.d/deadman-slot_off.sh

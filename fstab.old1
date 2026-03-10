@@ -1,0 +1,13 @@
+# <file system> <mount point> <type> <options> <dump> <pass>
+/dev/pve/root / ext4 errors=remount-ro 0 1
+UUID=FFB5-5E3F /boot/efi vfat defaults 0 1
+/dev/pve/swap none swap sw 0 0
+proc /proc proc defaults 0 0
+
+//192.168.86.180/home /mnt/nas cifs credentials=/etc/cifs-nas.creds,vers=3.0,uid=1000,gid=1000,file_mode=0755,dir_mode=0755,iocharset=utf8,soft,retrans=2,_netdev 0 0
+#//192.168.86.180/home /mnt/nas cifs credentials=/etc/cifs-nas.creds,vers=3.0,uid=1000,gid=1000,iocharset=utf8,soft,timeo=30,retrans=2,_netdev,x-systemd.automount,x-systemd.mount-timeout=30 0 0
+//192.168.86.180      /mnt/nas2 cifs credentials=/etc/cifs-nas.creds,vers=3.0,uid=1000,gid=1000,iocharset=utf8,soft,timeo=30,retrans=2,_netdev,x-systemd.automount,x-systemd.mount-timeout=30 0 0
+//192.168.86.180/video /mnt/video cifs credentials=/etc/cifs-nas.creds,vers=3.0,uid=1000,gid=1000,iocharset=utf8,soft,timeo=30,retrans=2,_netdev,x-systemd.automount,x-systemd.mount-timeout=30 0 0
+//192.168.86.180/photo /mnt/photo cifs credentials=/etc/cifs-nas.creds,vers=3.0,uid=1000,gid=1000,iocharset=utf8,soft,timeo=30,retrans=2,_netdev,x-systemd.automount,x-systemd.mount-timeout=30 0 0
+//192.168.86.180/web_packages /mnt/nas_web_packages cifs credentials=/etc/cifs-nas.creds,vers=3.0,uid=1000,gid=1000,iocharset=utf8,soft,timeo=30,retrans=2,_netdev,x-systemd.automount,x-systemd.mount-timeout=30 0 0
+
