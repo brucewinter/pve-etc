@@ -1,7 +1,7 @@
 {
 "starttime": 1773138480,
 "clinfo": 0,
-"vmlist": 3,
+"vmlist": 32,
 "corosync.conf": 1,
 "corosync.conf.new": 1,
 "storage.cfg": 1,
@@ -17,8 +17,8 @@
 "vzdump.cron": 1,
 "vzdump.conf": 1,
 "jobs.cfg": 1,
-"ha/crm_commands": 3310,
-"ha/manager_status": 3310,
+"ha/crm_commands": 8982,
+"ha/manager_status": 8982,
 "ha/resources.cfg": 1,
 "ha/rules.cfg": 1,
 "ha/groups.cfg": 1,
@@ -45,7 +45,7 @@
 "kvstore": {
 "pve": {
 "kv/static-info": 0,
-"tasklist": 3320,
+"tasklist": 8843,
 "kv/cpuflags-tcg": 0,
 "kv/cpuflags-kvm": 0,
 "kv/version-info": 0}
