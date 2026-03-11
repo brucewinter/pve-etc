@@ -1,4 +1,7 @@
 # <file system> <mount point> <type> <options> <dump> <pass>
+
+# bbw Note: this is backed up with etckeeper, see crontab -l
+
 /dev/pve/root / ext4 errors=remount-ro 0 1
 UUID=FFB5-5E3F /boot/efi vfat defaults 0 1
 /dev/pve/swap none swap sw 0 0

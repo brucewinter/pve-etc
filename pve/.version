@@ -17,8 +17,8 @@
 "vzdump.cron": 1,
 "vzdump.conf": 1,
 "jobs.cfg": 1,
-"ha/crm_commands": 8982,
-"ha/manager_status": 8982,
+"ha/crm_commands": 11952,
+"ha/manager_status": 11952,
 "ha/resources.cfg": 1,
 "ha/rules.cfg": 1,
 "ha/groups.cfg": 1,
@@ -45,7 +45,7 @@
 "kvstore": {
 "pve": {
 "kv/static-info": 0,
-"tasklist": 8843,
+"tasklist": 11813,
 "kv/cpuflags-tcg": 0,
 "kv/cpuflags-kvm": 0,
 "kv/version-info": 0}
